@@ -10,7 +10,7 @@ systemctl --user enable pulseaudio.socket
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
 
-cp PiOsSetup/.config ~/.config
+cp -r PiOsSetup/.config ~
 cp PiOsSetup/.profile ~/.profile
 
 git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
