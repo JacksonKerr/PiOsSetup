@@ -8,6 +8,7 @@ sudo apt --assume-yes full-upgrade
 sudo apt --assume-yes install git sway firefox nautilus
 
 sudo apt --assume-yes blueman pulseaudio pulseaudio-module-bluetooth
+#todo: this won't work until we start pulseaudio I think. may also need to find a way to start it on boot, idk. 
 systemctl --user enable pulseaudio.socket
 
 curl https://download.argon40.com/argon-eeprom.sh | bash
