@@ -17,7 +17,7 @@ git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
 pi-apps/manage install Signal
 pi-apps/manage install VSCodium
 
-sudo apt --assume-yes blueman pulseaudio pulseaudio-module-bluetooth
+sudo apt --assume-yes install blueman pulseaudio pulseaudio-module-bluetooth
 # todo: this won't work until we start pulseaudio I think. may also need 
 # to find a way to start it on boot, idk. 
 systemctl --user enable pulseaudio.socket
