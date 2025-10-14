@@ -10,12 +10,13 @@ systemctl --user enable pulseaudio.socket
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
 
-cp .config ~/.config
-cp .profile ~/.profile
+cp PiOsSetup/.config ~/.config
+cp PiOsSetup/.profile ~/.profile
 
 git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
 pi-apps/manage install Signal
 pi-apps/manage install VSCodium
 
 sudo apt autoremove
+
 sudo reboot
