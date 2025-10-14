@@ -21,6 +21,7 @@ sudo apt --assume-yes install blueman pulseaudio pulseaudio-module-bluetooth
 # todo: this won't work until we start pulseaudio I think. may also need 
 # to find a way to start it on boot, idk. 
 systemctl --user enable pulseaudio.socket
+systemctl --user enable pulseaudio
 
 sudo apt autoremove
 
