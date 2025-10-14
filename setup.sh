@@ -1,3 +1,7 @@
+# Login on the pi and connect it to the internet then run:
+# git clone https://github.com/JacksonKerr/PiOsSetup.git
+# bash PiOsSetup/setup.sh
+
 sudo apt update
 sudo apt --assume-yes full-upgrade
 sudo apt --assume-yes install git sway firefox nautilus
