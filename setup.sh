@@ -7,6 +7,7 @@ curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
 
 cp .config ~/.config
+cp .profile ~/.profile
 
 git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
 pi-apps/manage install Signal
