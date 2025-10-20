@@ -96,5 +96,8 @@ bindsym Alt+KP_0 seat - cursor press button1; seat - cursor release button1
 #bindsym --release $mod+KP_1 seat * cursor release button1
 #bindsym $mod+KP_1 seat * cursor press button1
 
+#startup apps
+exec foot btop
+exec firefox
 
 include /etc/sway/config.d/*
