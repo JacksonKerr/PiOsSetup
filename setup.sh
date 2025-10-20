@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt --assume-yes full-upgrade
 
-sudo apt --assume-yes install git sway firefox nautilus
+sudo apt --assume-yes install git sway firefox nautilus pulseaudio btop
 
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
@@ -18,7 +18,6 @@ pi-apps/manage install Signal
 pi-apps/manage install VSCodium
 
 # TODO: None of this works!
-sudo apt install pulseaudio
 #sudo apt --assume-yes install blueman pulseaudio pavucontrol pulseaudio-module-bluetooth
 #systemctl --user enable pulseaudio.socket
 #systemctl --user enable pulseaudio
