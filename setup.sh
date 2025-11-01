@@ -23,6 +23,8 @@ pi-apps/manage install VSCodium
 #systemctl --user enable pulseaudio
 #pulseaudio --start
 
-sudo apt autoremove
+sudo apt --assume-yes remove cloud-init
+
+sudo apt --assume-yes autoremove
 
 echo reboot
