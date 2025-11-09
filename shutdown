@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo i2cset -y 1 0x1a 0x86 0x01
+sudo poweroff

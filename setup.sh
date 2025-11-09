@@ -12,6 +12,8 @@ curl https://download.argon40.com/argon1.sh | bash
 
 cp -r PiOsSetup/.config ~
 cp PiOsSetup/.profile ~/.profile
+cp PiOsSetup/shutdown shutdown
+sudo chmod +x shutdown
 
 git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
 pi-apps/manage install Signal
