@@ -7,8 +7,12 @@ sudo apt --assume-yes full-upgrade
 
 sudo apt --assume-yes install git sway firefox nautilus pulseaudio btop
 
-#curl https://download.argon40.com/argon-eeprom.sh | bash
-#curl https://download.argon40.com/argon1.sh | bash
+wget https://download.argon40.com/scripts/argon-shutdown.sh
+sudo chmod 755 argon-shutdown.sh
+sudo mkdir /lib/systemd/system-shutdown/
+sudo mv argon-shutdown.sh /lib/systemd/system-shutdown/
+curl https://download.argon40.com/argon-eeprom.sh | bash
+curl https://download.argon40.com/argon1.sh | bash
 
 cp -r PiOsSetup/.config ~
 cp PiOsSetup/.profile ~/.profile
@@ -20,10 +24,10 @@ cp PiOsSetup/.profile ~/.profile
 #pi-apps/manage install VSCodium
 
 # TODO: None of this works!
-#sudo apt --assume-yes install blueman pulseaudio pavucontrol pulseaudio-module-bluetooth
-#systemctl --user enable pulseaudio.socket
-#systemctl --user enable pulseaudio
-#pulseaudio --start
+sudo apt --assume-yes install pulseaudio pavucontrol #pulseaudio-module-bluetooth blueman
+systemctl --user enable pulseaudio.socket
+systemctl --user enable pulseaudio
+pulseaudio --start
 
 sudo apt --assume-yes remove cloud-init
 
