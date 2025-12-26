@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt --assume-yes full-upgrade
 
-sudo apt --assume-yes install git i3 firefox nautilus pulseaudio btop
+sudo apt --assume-yes install xorg gldriver-test i3 firefox pulseaudio btop
 
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
@@ -17,7 +17,7 @@ git clone https://github.com/Botspot/pi-apps && ~/pi-apps/install
 pi-apps/manage install VSCodium
 
 # TODO: None of this works!
-sudo apt --assume-yes install pulseaudio pavucontrol #pulseaudio-module-bluetooth blueman
+sudo apt --assume-yes install pulseaudio pavucontrol
 systemctl --user enable pulseaudio.socket
 systemctl --user enable pulseaudio
 pulseaudio --start
