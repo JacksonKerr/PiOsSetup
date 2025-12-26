@@ -26,4 +26,14 @@ sudo apt --assume-yes remove cloud-init
 
 sudo apt --assume-yes autoremove
 
+rm Desktop
+rm Downloads
+rm Music
+rm Pictures
+rm Public
+rm Templates
+rm Videos
+
+rm -rf PiOsSetup
+
 echo reboot
