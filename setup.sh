@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt --assume-yes full-upgrade
 
-sudo apt --assume-yes install xorg gldriver-test i3 xterm btop firefox pulseaudio
+sudo apt --assume-yes install sway firefox pulseaudio
 
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
