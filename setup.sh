@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt --assume-yes full-upgrade
 
-sudo apt --assume-yes install sway foot firefox pulseaudio
+sudo apt --assume-yes install sway foot btop firefox pulseaudio
 
 curl https://download.argon40.com/argon-eeprom.sh | bash
 curl https://download.argon40.com/argon1.sh | bash
